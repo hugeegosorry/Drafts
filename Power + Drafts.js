@@ -15,13 +15,13 @@ var action_list = [
 //////📱 Utilities
     ["app", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&term=", 0],
     ["pt", "pricetag://search?p=iOS&key=", 0],
-    ["gm", "comgooglemaps://?q=", 0],
+//    ["gm", "comgooglemaps://?q=", 0],
     ["tran", "https://translate.google.cn/m/translate#auto/zh-CN/", 1],
     ["dic", "dictionary2://define-", 0],
     ["say", "launch://x-callback-url/speak?x-success=drafts4://create&text=", 0],
     ["macs", "https://www.macstories.net/?s=", 0],
     ["def", "launch://x-callback-url/define?x-success=drafts4://create&text=", 0],
-    ["freemusic", "https://www.tikitiki.cn/search.do?page=1&type=1&keyword=", 1],
+//    ["freemusic", "https://www.tikitiki.cn/search.do?page=1&type=1&keyword=", 1],
     ["event", "drafts4://create?action=Fantastical%20Event&text=", 0],
 
 //////📱 Social
@@ -36,17 +36,17 @@ var action_list = [
 
 //////📱 Shopping
     ["tb", "taobao://s.taobao.com/?q=", 0],
-    ["amz", "http://www.amazon.com/s/?field-keywords=", 1],
+//    ["amz", "http://www.amazon.com/s/?field-keywords=", 1],
     ["wtb", "https://s.m.taobao.com/h5?event_submit_do_new_search_auction=1&q=", 1],
     ["wjd", "https://so.m.jd.com/ware/search.action?keyword=", 1],
-    ["book", "http://search.m.dangdang.com/search.php?keyword=", 1],
+//    ["book", "http://search.m.dangdang.com/search.php?keyword=", 1],
 
 //////📱 Search Engine
     ["appinfo", "", 1],
     ["gg", "https://www.google.com/search?q=", 1],
     ["bing", "http://cn.bing.com/search?q=", 1]
     ["wx", "http://weixin.sogou.com/weixinwap?query=", 1],
-    ["wolf", "wolframalpha:///?i=", 0],
+//    ["wolf", "wolframalpha:///?i=", 0],
     ["imdb", "imdb:///find?q=", 0],
 //    ["music", "spotify:search:", 0],
     ["wiki", "https://zh.m.wikipedia.org/wiki/", 1],
@@ -120,6 +120,9 @@ var action_list = [
     ["tdls", "todoist://addtask?date=none&priority=2&content="],
     ["tdlt", "todoist://addtask?date=none&priority=3&content="],
     ["tdlf", "todoist://addtask?date=none&priority=4&content="],
+
+
+
 
 //‼️ OmniFocus Function
 ////📋 Attach notes
