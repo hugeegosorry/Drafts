@@ -3,7 +3,7 @@ var action, content, uri, arr;
 var key_list = [];
 
 // default action
-var default_action = 'td';
+var default_action = 'gg';
 
 // action List ["ACTION_NAME", "URL_SCHEME", "USE_INTERNAL_BROWSER"]
 var action_list = [
@@ -13,6 +13,7 @@ var action_list = [
     ["op", "onepassword://search/", 0],
     ["redeem", "https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/freeProductCodeWizard?mt=8&code=", 0],
 //////📱 Utilities
+    ["app", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&term=", 0],
     ["pt", "pricetag://search?p=iOS&key=", 0],
     ["gm", "comgooglemaps://?q=", 0],
     ["tran", "https://translate.google.cn/m/translate#auto/zh-CN/", 1],
@@ -37,7 +38,6 @@ var action_list = [
     ["wtb", "https://s.m.taobao.com/h5?event_submit_do_new_search_auction=1&q=", 1],
     ["wjd", "https://so.m.jd.com/ware/search.action?keyword=", 1],
     ["book", "http://search.m.dangdang.com/search.php?keyword=", 1],
-    ["saltfish", "https://s.2.taobao.com/list/list.htm?search_type=item&q=", 1],
 
 //////📱 Search Engine
     ["appinfo", "", 1],
@@ -51,7 +51,7 @@ var action_list = [
     ["smusic", "https://www.tikitiki.cn/search.do?page=1&type=1&keyword=", 1],
     ["zhihu", "http://www.zhihu.com/search?q=", 1],
     ["lyrics", "mxm://search/", 0],
-    ["xyu", "https://s.2.taobao.com/list/list.htm?search_type=item&q=", 1],
+    ["xy", "https://s.2.taobao.com/list/list.htm?search_type=item&q=", 1],
 
 //////📱 Writeing
     ["life", "", 0],
@@ -64,7 +64,6 @@ var action_list = [
     ["IP", "http://www.ip138.com/ips138.asp?ip=", 1],
     ["cy", "http://chengyu.t086.com/chaxun.php?q=", 1],
     ["pin", "https://www.pinterest.com/search/pins/?q=", 1],
-    ["gh", "https://github.com/search?&q=", 1],
     ["uns", "https://unsplash.com/search/photos/", 1],
     ["ssp", "https://www.google.co.jp/search?q=site:sspai.com+", 1],
     ["youtube", "https://m.youtube.com/results?q=", 0],
@@ -135,7 +134,7 @@ var action_list = [
 ////🤔 Question task
     ["why","omnifocus://x-callback-url/add?&context=%F0%9F%A4%94%F0%9F%A4%94&x-success=drafts4://create&autosave=true&due=Sunday%2010:00&name=", 0],
 ////🔖 App task
-    ["app","omnifocus://x-callback-url/add?&context=1%EF%B8%8F%E2%83%A3&x-success=drafts4://create&autosave=true&due=Today%2019:35&name=App%20", 0],
+    ["apps","omnifocus://x-callback-url/add?&context=1%EF%B8%8F%E2%83%A3&x-success=drafts4://create&autosave=true&due=Today%2019:35&name=Apps%20", 0],
 ////🎧 Music task
     ["mu","omnifocus://x-callback-url/add?&context=%F0%9F%8E%A7%F0%9F%8E%A7&x-success=drafts4://create&autosave=true&due=Today%2018:45&name=%F0%9F%8E%A7%F0%9F%8E%A7%20", 0],
 ////📞 Chat task
