@@ -31,10 +31,12 @@ var action_list = [
     ["tw", "tweetbot:///post?text=", 0],
     ["twuser", "tweetbot:///follow/", 0],
     ["sms", "drafts4://create?action=Message&text=", 0],
+    ["wb", "moke:///post?text="],
+    ["wbuser", "moke:///search/users?query="],
 
 //////📱 Shopping
     ["tb", "taobao://s.taobao.com/?q=", 0],
-    ["am", "http://www.amazon.com/s/?field-keywords=", 1],
+    ["amz", "http://www.amazon.com/s/?field-keywords=", 1],
     ["wtb", "https://s.m.taobao.com/h5?event_submit_do_new_search_auction=1&q=", 1],
     ["wjd", "https://so.m.jd.com/ware/search.action?keyword=", 1],
     ["book", "http://search.m.dangdang.com/search.php?keyword=", 1],
@@ -46,17 +48,21 @@ var action_list = [
     ["wx", "http://weixin.sogou.com/weixinwap?query=", 1],
     ["wolf", "wolframalpha:///?i=", 0],
     ["imdb", "imdb:///find?q=", 0],
-    ["music", "spotify:search:", 0],
+//    ["music", "spotify:search:", 0],
     ["wiki", "https://zh.m.wikipedia.org/wiki/", 1],
-    ["smusic", "https://www.tikitiki.cn/search.do?page=1&type=1&keyword=", 1],
+    ["baike", "http://www.baike.com/wiki/"],
+ //   ["smusic", "https://www.tikitiki.cn/search.do?page=1&type=1&keyword=", 1],
     ["zhihu", "http://www.zhihu.com/search?q=", 1],
-    ["lyrics", "mxm://search/", 0],
+//    ["lyrics", "mxm://search/", 0],
     ["xy", "https://s.2.taobao.com/list/list.htm?search_type=item&q=", 1],
 
 //////📱 Writeing
     ["life", "", 0],
     ["newbear", "bear://x-callback-url/create?x-success=drafts4://create&text=", 0],
+//    ["bear", "bear://x-callback-url/create?text="],
     ["ns", "ulysses://x-callback-url/new-sheet?index=2&x-success=drafts4://create&text=", 0],
+    ["dayone", "dayone://post?entry="],
+
 
 ////🌐 Web Tools
     ["encode", "", 0],
@@ -108,6 +114,12 @@ var action_list = [
     ["ca", "http://itunes.apple.com/ca/app/region-chager/id0123456789", 0],
     ["hk", "http://itunes.apple.com/hk/app/region-chager/id0123456789", 0],
     ["cn", "http://itunes.apple.com/cn/app/region-chager/id0123456789", 0],
+
+//// Todolist f=first s=second t=third f=fourth
+    ["tdlf", "todoist://addtask?date=none&priority=1&content="],
+    ["tdls", "todoist://addtask?date=none&priority=2&content="],
+    ["tdlt", "todoist://addtask?date=none&priority=3&content="],
+    ["tdlf", "todoist://addtask?date=none&priority=4&content="],
 
 //‼️ OmniFocus Function
 ////📋 Attach notes
