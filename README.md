@@ -10,6 +10,4 @@ Forked from:
 
 [Yet Another Alfred for iOS Drafts](https://gist.github.com/JamesHopbourn/66ec42a622e86a90ad2da8290d4701ce)
 
-
-
 ### Notes：
