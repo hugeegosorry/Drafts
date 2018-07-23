@@ -8,7 +8,10 @@ var action_list = [
 
     ["✎", "drafts5://x-callback-url/runAction?action=RunBearTag&x-success=drafts5://&text="],
 
-   // ["", "drafts5://x-callback-url/runAction?action=Preview&x-success=bear://&text="],
+    ["w", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text="],
+    ["wl", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text="],
+    ["work", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text="],
+    ["WorkLog", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text="],
 
     ["ai", "aisearch2://search?q=", 0],
     ["amz", "http://www.amazon.com/s/?field-keywords=", 1],
