@@ -53,6 +53,7 @@ var action_list = [
     ["wx", "http://weixin.sogou.com/weixinwap?query=", 1],
     ["xy", "https://s.2.taobao.com/list/list.htm?search_type=item&q=", 1],
     ["yt", "https://m.youtube.com/results?q=", 0],
+    ["Youtube", "https://m.youtube.com/results?q=", 0],
     ["zhihu", "http://www.zhihu.com/search?q=", 1],
     
     //谷歌高级搜索
@@ -71,7 +72,7 @@ var action_list = [
     
     //文字收集
     // ["do", "dayone://post?entry=", 0],
-    // ["nb", "bear://x-callback-url/create?x-success=drafts5://create&text=", 0],
+    ["nb", "bear://x-callback-url/create?x-success=drafts5://create&text=", 0],
     // ["ns", "ulysses://x-callback-url/new-sheet?index=2&text=", 0],
 
     //Workflow
