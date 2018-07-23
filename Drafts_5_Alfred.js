@@ -6,7 +6,7 @@ var action, content, uri, arr;
 // action List ["ACTION_NAME", "URL_SCHEME", "USE_INTERNAL_BROWSER"]
 var action_list = [
 
-    ["✎", "drafts5://x-callback-url/runAction?action=RunBearTag&x-success=drafts5://&text="],
+    ["✎", "drafts5://x-callback-url/runAction?action=RunBearTag&x-success=drafts5://&text=", 0],
 
     ["w", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text="],
     ["wl", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text="],
@@ -17,13 +17,15 @@ var action_list = [
     ["amz", "http://www.amazon.com/s/?field-keywords=", 1],
     ["app", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&term=", 0],
     ["App", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&term=", 0],
-    ["bing", "http://cn.bing.com/search?q=", 1]
+    ["bing", "http://cn.bing.com/search?q=", 1],
     ["def", "launch://x-callback-url/define?x-success=drafts5://create&text=", 0],
     ["dd", "http://search.m.dangdang.com/search.php?keyword=", 1],
     ["dic", "dictionary2://define-", 0],
     ["due", "due:///add?title=", 0],
     ["gg", "https://www.google.com/search?q=", 1],
     ["Google", "https://www.google.com/search?q=", 1],
+    ["sa", "https://www.google.com/search?q=", 0],
+    ["Safari", "https://www.google.com/search?q=", 0],
     ["gh", "https://github.com/search?&q=", 0],
     ["imdb", "imdb:///find?q=", 0],
     ["ins", "instagram://user?username=", 0],
@@ -124,13 +126,13 @@ else if (key_list.indexOf(input.split('\n').pop().toLowerCase()) != -1) {
 else {
     action = default_action;
     uri = action_list[key_list.indexOf(action)][1];
-    content = input.trim() ? input.trim() : editor.getClipboard();
+    content = input.trim() ? input.trim() : app.getClipboard();
 }
 
 // don't append unnecessary clipboard content
 if (content.trim().length === 0) {
     if (uri.endsWith('//') || uri.endsWith('=')) {
-        content = editor.getClipboard().trim();
+        content = app.getClipboard().trim();
     }
 }
 
@@ -148,7 +150,7 @@ if (action == 'url') {
 if (uri.startsWith('http')) {
     if (action_list[key_list.indexOf(action)][2]) {
         content = encodeURIComponent(content);
-        editor.setClipboard(uri + content);
+        app.setClipboard(uri + content);
         uri = 'drafts5://x-callback-url/runAction?action=URL';
         content = "";
     }
@@ -180,13 +182,13 @@ if (action == 'test') {
 }
 
 if (action == 'encode') {
-    editor.setClipboard((encodeURI(content)));
+    app.setClipboard((encodeURI(content)));
     uri = "drafts5://create";
     content = "";
 }
 
 if (action == 'decode') {
-    editor.setClipboard((decodeURI(content)));
+    app.setClipboard((decodeURI(content)));
     uri = "drafts5://create";
     content = "";
 }
@@ -195,7 +197,7 @@ if (action == 'decode') {
 //     input = draft.content;
 //     reg = new RegExp(/\s*encode\s*/, 'i');
 //     input = (input.replace(reg, ""));
-//     editor.setClipboard((encodeURI(input)))
+//     app.setClipboard((encodeURI(input)))
 //     uri = "drafts5://create";
 //     content = "";
 // }
@@ -204,7 +206,7 @@ if (action == 'decode') {
 //     input = draft.content;
 //     reg = new RegExp(/\s*decode\s*/, 'i');
 //     input = (input.replace(reg, ""));
-//     editor.setClipboard((decodeURI(input)))
+//     app.setClipboard((decodeURI(input)))
 //     uri = "drafts5://create";
 //     content = "";
 // }
@@ -220,7 +222,7 @@ if (action == 'replace') {
     content = body.replace(re, replace);
     alert('已替换 '+matches.length+' 处');
     uri = "drafts5://create?text="
-    editor.setClipboard(content)
+    app.setClipboard(content)
     }
     else {
      alert('「'+find+'」'+'未找到');
@@ -244,7 +246,7 @@ if (weblink != null) {
    content = "- 🔖 "+title+" @estimate(05 min) @concontent(📕📕 Reading Lists)"+"\n"+link
    target = 'inbox';
    content = content.replace(/\(|\)|\[|\]/g, "")
-   uri = "omnifocus:///paste?content="+ encodeURIComponent(content)+"&target="+ encodeURIComponent(target)+"&x-success=drafts4://"
+   uri = "omnifocus:///paste?content="+ encodeURIComponent(content)+"&target="+ encodeURIComponent(target)+"&x-success=drafts5://"
    content = "";
 }
 
