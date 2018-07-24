@@ -8,10 +8,10 @@ var action_list = [
 
     ["✎", "drafts5://x-callback-url/runAction?action=RunBearTag&x-success=drafts5://&text=", 0],
 
-    ["w", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text="],
-    ["wl", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text="],
-    ["work", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text="],
-    ["WorkLog", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text="],
+    ["w", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
+    ["wl", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
+    ["work", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
+    ["WorkLog", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
 
     ["ai", "aisearch2://search?q=", 0],
     ["amz", "http://www.amazon.com/s/?field-keywords=", 1],
@@ -36,7 +36,7 @@ var action_list = [
     ["op", "onepassword://search/", 0],
     ["pint", "https://www.pinterest.com/search/pins/?q=", 0],
     ["pt", "pricetag://search?p=iOS&key=", 0],
-    ["redeem", "https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/freeProductCodeWizard?mt=8&code="]
+    ["redeem", "https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/freeProductCodeWizard?mt=8&code="],
     ["say", "launch://x-callback-url/speak?x-success=drafts5://create&text=", 0],
     // ["sms", "drafts5://create?action=Message&text=", 0],
     ["sms", "sms://", 0],
