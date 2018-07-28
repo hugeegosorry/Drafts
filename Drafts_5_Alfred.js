@@ -13,13 +13,15 @@ var action_list = [
     ["work", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
     ["WorkLog", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
 
+    ["dd", "drafts5://x-callback-url/runAction?action=Task2TickTick&text=", 0],
+
     ["ai", "aisearch2://search?q=", 0],
     ["amz", "http://www.amazon.com/s/?field-keywords=", 1],
     ["app", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&term=", 0],
     ["App", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&term=", 0],
     ["bing", "http://cn.bing.com/search?q=", 1],
     ["def", "launch://x-callback-url/define?x-success=drafts5://create&text=", 0],
-    ["dd", "http://search.m.dangdang.com/search.php?keyword=", 1],
+    ["dang", "http://search.m.dangdang.com/search.php?keyword=", 1],
     ["dic", "dictionary2://define-", 0],
     ["due", "due:///add?title=", 0],
     ["gg", "https://www.google.com/search?q=", 1],
