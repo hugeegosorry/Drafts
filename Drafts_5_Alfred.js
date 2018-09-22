@@ -1,6 +1,6 @@
 var key_list = [];
 var input = draft.content;
-var default_action = 'gg';
+var default_action = '✎';
 var action, content, uri, arr;
 
 // action List ["ACTION_NAME", "URL_SCHEME", "USE_INTERNAL_BROWSER"]
@@ -19,6 +19,7 @@ var action_list = [
     ["amz", "http://www.amazon.com/s/?field-keywords=", 1],
     ["app", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&term=", 0],
     ["App", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&term=", 0],
+    ["as", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&term=", 0],
     ["bing", "http://cn.bing.com/search?q=", 1],
     ["def", "launch://x-callback-url/define?x-success=drafts5://create&text=", 0],
     ["dang", "http://search.m.dangdang.com/search.php?keyword=", 1],
