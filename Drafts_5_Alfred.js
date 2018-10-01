@@ -36,6 +36,7 @@ var action_list = [
     ["jdm", "https://so.m.jd.com/ware/search.action?keyword=", 1],
     ["mail", "drafts5://create?action=Email&text=", 0],
     ["medium", "https://medium.com/search?q=", 0],
+    ["moke", "moke://post?text=", 0],
     ["op", "onepassword://search/", 0],
     ["pint", "https://www.pinterest.com/search/pins/?q=", 0],
     ["pt", "pricetag://search?p=iOS&key=", 0],
