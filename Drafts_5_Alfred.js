@@ -33,7 +33,7 @@ var action_list = [
     ["ins", "instagram://user?username=", 0],
     ["ip", "http://ip.cn/index.php?ip=", 1],
     ["jdm", "https://so.m.jd.com/ware/search.action?keyword=", 1],
-    ["mail", "drafts5://create?action=Email&text=", 0],
+    // ["mail", "drafts5://create?action=Email&text=", 0],
     ["medium", "https://medium.com/search?q=", 0],
     ["moke", "moke:///post?text=", 0],
     ["mk", "moke://6714650703/post?text=", 0],
@@ -70,11 +70,11 @@ var action_list = [
     ["xls", "https://www.google.com/search?q=-baidu%20filetype:xls+", 0],
 
     //切换商店地区
-    ["us", "http://itunes.apple.com/us/app/region-chager/id0123456789", 0],
-    ["jp", "http://itunes.apple.com/jp/app/region-chager/id0123456789", 0],
-    ["ca", "http://itunes.apple.com/ca/app/region-chager/id0123456789", 0],
-    ["hk", "http://itunes.apple.com/hk/app/region-chager/id0123456789", 0],
-    ["cn", "http://itunes.apple.com/cn/app/region-chager/id0123456789", 0],
+    ["us", "http://itunes.apple.com/us/app/", 0],
+    ["jp", "http://itunes.apple.com/jp/app/", 0],
+    ["ca", "http://itunes.apple.com/ca/app/", 0],
+    ["hk", "http://itunes.apple.com/hk/app/", 0],
+    ["cn", "http://itunes.apple.com/cn/app/", 0],
     
     //文字收集
     // ["do", "dayone://post?entry=", 0],
