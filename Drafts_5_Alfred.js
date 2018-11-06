@@ -81,6 +81,9 @@ var action_list = [
     ["nb", "bear://x-callback-url/create?x-success=drafts5://create&text=", 0],
     // ["ns", "ulysses://x-callback-url/new-sheet?index=2&text=", 0],
 
+    // Shortcuts
+    ["Dler", "shortcuts://run-shortcut?name=Dler%20Cloud",0],
+
     //Workflow
     // ["download", "workflow://run-workflow?name=Download%20Files&input=", 0],
     // ["movie", "workflow://run-workflow?name=Douban%20Movie&input=", 0],
