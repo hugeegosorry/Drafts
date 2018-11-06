@@ -6,7 +6,8 @@ var action, content, uri, arr;
 // action List ["ACTION_NAME", "URL_SCHEME", "USE_INTERNAL_BROWSER"]
 var action_list = [
 
-    ["✎", "drafts5://x-callback-url/runAction?action=RunBearTag&x-success=drafts5://&text=", 0],
+    // ["✎", "drafts5://x-callback-url/runAction?action=RunBearTag&x-success=drafts5://&text=", 0],
+    ["✎", "shortcuts://x-callback-url/run-shortcut?name=Bear%26Tag&x-success=drafts5://", 0],
 
     ["w", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
     ["wl", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
@@ -82,7 +83,8 @@ var action_list = [
     // ["ns", "ulysses://x-callback-url/new-sheet?index=2&text=", 0],
 
     // Shortcuts
-    ["Dler", "shortcuts://run-shortcut?name=Dler%20Cloud",0],
+    ["Link", "shortcuts://run-shortcut?name=Shorten%20Link",0],
+    ["mdlink", "shortcuts://run-shortcut?name=Copy%20Markdown%20Link",0],
 
     //Workflow
     // ["download", "workflow://run-workflow?name=Download%20Files&input=", 0],
