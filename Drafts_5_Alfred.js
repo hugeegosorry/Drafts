@@ -11,7 +11,7 @@ var action_list = [
     ["w", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
     ["wl", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
     ["work", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
-    ["WorkLog", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
+    //["WorkLog", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
 
     ["dd", "drafts5://x-callback-url/runAction?action=Task2TickTick&text=", 0],
 
@@ -38,7 +38,7 @@ var action_list = [
     ["moke", "moke:///post?text=", 0],
     ["mk", "moke://6714650703/post?text=", 0],
     ["op", "onepassword://search/", 0],
-    ["pint", "https://www.pinterest.com/search/pins/?q=", 0],
+    ["Pinterest", "https://www.pinterest.com/search/pins/?q=", 0],
     ["pt", "pricetag://search?p=iOS&key=", 0],
     ["redeem", "https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/freeProductCodeWizard?mt=8&code="],
     ["say", "launch://x-callback-url/speak?x-success=drafts5://create&text=", 0],
