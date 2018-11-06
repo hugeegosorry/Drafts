@@ -14,7 +14,9 @@ var action_list = [
     ["work", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
     //["WorkLog", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
 
-    ["dd", "drafts5://x-callback-url/runAction?action=Task2TickTick&text=", 0],
+    // ["dd", "drafts5://x-callback-url/runAction?action=Task2TickTick&text=", 0],
+    ["dd", "ticktick://x-callback-url/v1/add_task?list=today&x-success=drafts5://&title=", 0],
+    ["tt", "ticktick://x-callback-url/v1/add_task?list=today&x-success=drafts5://&title=", 0],
 
     ["ai", "aisearch2://search?q=", 0],
     ["amz", "http://www.amazon.com/s/?field-keywords=", 1],
@@ -85,15 +87,11 @@ var action_list = [
     // Shortcuts
     // ["#", "shortcuts://x-callback-url/run-shortcut?name=###&x-success=drafts5://", 0],
 
-    //Workflow
+    //Workflow Example
     // ["download", "workflow://run-workflow?name=Download%20Files&input=", 0],
-    // ["movie", "workflow://run-workflow?name=Douban%20Movie&input=", 0],
-    // ["del", "workflow://run-workflow?name=Delete%20same%20item&input=", 0],
-    // ["Morse", "workflow://run-workflow?name=MorseCode&input=", 0],
-    // ["trump", "workflow://run-workflow?name=@realDonaldTrump&input=", 0],
     
     //OmniFocus
-    ["task", "drafts5://x-callback-url/runAction?action=TaskPaper&text=", 0],
+    // ["task", "drafts5://x-callback-url/runAction?action=TaskPaper&text=", 0],
 
     ["test", "", 0],
     ["encode", "", 0],
