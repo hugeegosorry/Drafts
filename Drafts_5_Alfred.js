@@ -83,8 +83,7 @@ var action_list = [
     // ["ns", "ulysses://x-callback-url/new-sheet?index=2&text=", 0],
 
     // Shortcuts
-    ["Link", "shortcuts://run-shortcut?name=Shorten%20Link",0],
-    ["mdlink", "shortcuts://run-shortcut?name=Copy%20Markdown%20Link",0],
+    // ["#", "shortcuts://x-callback-url/run-shortcut?name=###&x-success=drafts5://", 0],
 
     //Workflow
     // ["download", "workflow://run-workflow?name=Download%20Files&input=", 0],
