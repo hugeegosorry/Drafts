@@ -6,8 +6,7 @@ var action, content, uri, arr;
 // action List ["ACTION_NAME", "URL_SCHEME", "USE_INTERNAL_BROWSER"]
 var action_list = [
 
-    // ["✎", "drafts5://x-callback-url/runAction?action=RunBearTag&x-success=drafts5://&text=", 0],
-    ["✎", "shortcuts://x-callback-url/run-shortcut?name=Bear%26Tag&x-success=drafts5://", 0],
+    ["✎", "drafts5://x-callback-url/runAction?action=%24BearDiary&x-success=drafts5://&text=", 0],
 
     ["w", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
     ["wl", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
