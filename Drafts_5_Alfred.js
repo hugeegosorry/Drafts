@@ -56,7 +56,6 @@ var action_list = [
     // ["twuser", "tweetbot:///follow/", 0],
     ["uns", "https://unsplash.com/search/photos/", 0],
     ["url", "", 1],
-    ["weibo", "sinaweibo://compose", 0],
     ["wiki", "https://zh.m.wikipedia.org/wiki/", 1],
     ["wolf", "wolframalpha:///?i=", 0],
     ["wx", "http://weixin.sogou.com/weixinwap?query=", 1],
