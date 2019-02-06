@@ -59,7 +59,7 @@ var action_list = [
     ["wiki", "https://zh.m.wikipedia.org/wiki/", 1],
     ["wolf", "wolframalpha:///?i=", 0],
     ["wx", "http://weixin.sogou.com/weixinwap?query=", 1],
-    ["xy", "https://s.2.taobao.com/list/list.htm?search_type=item&q=", 1],
+    //["xy", "https://s.2.taobao.com/list/list.htm?search_type=item&q=", 1],
     ["yt", "https://m.youtube.com/results?q=", 0],
     ["Youtube", "https://m.youtube.com/results?q=", 0],
     ["zhihu", "http://www.zhihu.com/search?q=", 1],
