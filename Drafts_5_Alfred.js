@@ -8,19 +8,19 @@ var action_list = [
 
     ["✎", "drafts5://x-callback-url/runAction?action=%24BearDiary&x-success=drafts5://&text=", 0],
 
-    ["w", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
-    ["wl", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
-    ["work", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
-    //["WorkLog", "drafts5://x-callback-url/runAction?action=Append%20to%20Dropbox%20Journal&text=", 0],
+    ["w", "drafts5://x-callback-url/runAction?action=Append%20to%20&text=", 0],
+    ["work", "drafts5://x-callback-url/runAction?action=Append%20to%20Work&text=", 0],
+    //["WorkLog", "drafts5://x-callback-url/runAction?action=Append%20to%20Work&text=", 0],
 
     // ["dd", "drafts5://x-callback-url/runAction?action=Task2TickTick&text=", 0],
     ["dd", "ticktick://x-callback-url/v1/add_task?list=today&x-success=drafts5://&title=", 0],
-    ["tt", "ticktick://x-callback-url/v1/add_task?list=today&x-success=drafts5://&title=", 0],
+    ["TickTick", "ticktick://x-callback-url/v1/add_task?list=today&x-success=drafts5://&title=", 0],
 
     ["ai", "aisearch2://search?q=", 0],
     ["amz", "http://www.amazon.com/s/?field-keywords=", 1],
     ["app", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&term=", 0],
     ["as", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&term=", 0],
+    ["beorg", "beorg://x-callback-url/capture", 0],
     ["bing", "http://cn.bing.com/search?q=", 1],
     ["def", "launch://x-callback-url/define?x-success=drafts5://create&text=", 0],
     ["dang", "http://search.m.dangdang.com/search.php?keyword=", 1],
