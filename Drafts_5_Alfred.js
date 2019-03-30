@@ -1,6 +1,6 @@
 var key_list = [];
 var input = draft.content;
-var default_action = '✎';
+var default_action = '☞';
 var action, content, uri, arr;
 
 // action List ["ACTION_NAME", "URL_SCHEME", "USE_INTERNAL_BROWSER"]
@@ -11,6 +11,7 @@ var action_list = [
     ["w", "drafts5://x-callback-url/runAction?action=Append%20to%20&text=", 0],
     ["work", "drafts5://x-callback-url/runAction?action=Append%20to%20Work&text=", 0],
     //["WorkLog", "drafts5://x-callback-url/runAction?action=Append%20to%20Work&text=", 0],
+    ["☞", "drafts5://x-callback-url/runAction?action=Copy&text=", 0],
 
     // ["dd", "drafts5://x-callback-url/runAction?action=Task2TickTick&text=", 0],
     ["dd", "ticktick://x-callback-url/v1/add_task?list=today&x-success=drafts5://&title=", 0],
@@ -20,7 +21,7 @@ var action_list = [
     ["amz", "http://www.amazon.com/s/?field-keywords=", 1],
     ["app", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&term=", 0],
     ["as", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&term=", 0],
-    ["beorg", "beorg://x-callback-url/capture", 0],
+    //["beorg", "beorg://x-callback-url/capture", 0],
     ["bing", "http://cn.bing.com/search?q=", 1],
     ["def", "launch://x-callback-url/define?x-success=drafts5://create&text=", 0],
     ["dang", "http://search.m.dangdang.com/search.php?keyword=", 1],
