@@ -8,9 +8,9 @@ var action_list = [
 
     ["✎", "drafts5://x-callback-url/runAction?action=%24BearDiary&x-success=drafts5://&text=", 0],
 
-    ["w", "drafts5://x-callback-url/runAction?action=Append%20to%20&text=", 0],
-    ["work", "drafts5://x-callback-url/runAction?action=Append%20to%20Work&text=", 0],
-    //["WorkLog", "drafts5://x-callback-url/runAction?action=Append%20to%20Work&text=", 0],
+    ["w", "drafts5://x-callback-url/runAction?action=WorkLog&text=", 0],
+    ["work", "drafts5://x-callback-url/runAction?action=WorkLog&text=", 0],
+    //["WorkLog", "drafts5://x-callback-url/runAction?action=WorkLog&text=", 0],
     
     //默认动作为复制。但由于 action 中设置了 transh，所以执行完会删除。
     ["☞", "drafts5://x-callback-url/runAction?action=Copy&text=", 0],
