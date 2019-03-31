@@ -12,12 +12,16 @@ var action_list = [
     ["work", "drafts5://x-callback-url/runAction?action=Append%20to%20Work&text=", 0],
     //["WorkLog", "drafts5://x-callback-url/runAction?action=Append%20to%20Work&text=", 0],
     
+    //默认动作为复制。但由于 action 中设置了 transh，所以执行完会删除。
     ["☞", "drafts5://x-callback-url/runAction?action=Copy&text=", 0],
+    
+    //添加到 iCloud 文档
     ["rec", "drafts5://x-callback-url/runAction?action=%24Memory&text=", 0],
-
-    // ["dd", "drafts5://x-callback-url/runAction?action=Task2TickTick&text=", 0],
-    ["dd", "ticktick://x-callback-url/v1/add_task?list=today&x-success=drafts5://&title=", 0],
-    ["TickTick", "ticktick://x-callback-url/v1/add_task?list=today&x-success=drafts5://&title=", 0],
+    
+    //下面这个动作处理多行文本时会添加多个任务。
+    // ["dd", "ticktick://x-callback-url/v1/add_task?list=inbox&x-success=drafts5://&title=", 0],
+    ["dd", "drafts5://x-callback-url/runAction?action=Task2TickTick&x-success=drafts5://&text=", 0],
+    ["TickTick", "drafts5://x-callback-url/runAction?action=Task2TickTick&x-success=drafts5://&text=", 0],
 
     ["ai", "aisearch2://search?q=", 0],
     ["amz", "http://www.amazon.com/s/?field-keywords=", 1],
