@@ -11,7 +11,9 @@ var action_list = [
     ["w", "drafts5://x-callback-url/runAction?action=Append%20to%20&text=", 0],
     ["work", "drafts5://x-callback-url/runAction?action=Append%20to%20Work&text=", 0],
     //["WorkLog", "drafts5://x-callback-url/runAction?action=Append%20to%20Work&text=", 0],
+    
     ["☞", "drafts5://x-callback-url/runAction?action=Copy&text=", 0],
+    ["rec", "drafts5://x-callback-url/runAction?action=%24Memory&text=", 0],
 
     // ["dd", "drafts5://x-callback-url/runAction?action=Task2TickTick&text=", 0],
     ["dd", "ticktick://x-callback-url/v1/add_task?list=today&x-success=drafts5://&title=", 0],
