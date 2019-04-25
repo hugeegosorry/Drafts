@@ -1,5 +1,4 @@
-var key_list = [];
-var input = draft.content;
+var key_list = []; var input = draft.content;
 var default_action = '☞';
 var action, content, uri, arr;
 
@@ -12,7 +11,7 @@ var action_list = [
     ["work", "drafts5://x-callback-url/runAction?action=WorkLog&text=", 0],
     //["WorkLog", "drafts5://x-callback-url/runAction?action=WorkLog&text=", 0],
     
-    //默认动作为复制。但由于 action 中设置了 transh，所以执行完会删除。
+    //默认动作为复制。但由于 action 中设置了 trash，所以执行完会删除。
     ["☞", "drafts5://x-callback-url/runAction?action=Copy&text=", 0],
     
     //添加到 iCloud 文档
@@ -66,6 +65,7 @@ var action_list = [
     ["wiki", "https://zh.m.wikipedia.org/wiki/", 1],
     ["wolf", "wolframalpha:///?i=", 0],
     ["wx", "http://weixin.sogou.com/weixinwap?query=", 1],
+    // 咸鱼网页已失效。
     //["xy", "https://s.2.taobao.com/list/list.htm?search_type=item&q=", 1],
     ["yt", "https://m.youtube.com/results?q=", 0],
     ["Youtube", "https://m.youtube.com/results?q=", 0],
