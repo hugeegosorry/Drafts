@@ -7,9 +7,10 @@ var action_list = [
 
     ["✎", "drafts5://x-callback-url/runAction?action=%24BearDiary&x-success=drafts5://&text=", 0],
 
-    ["w", "drafts5://x-callback-url/runAction?action=WorkLog&text=", 0],
     ["work", "drafts5://x-callback-url/runAction?action=WorkLog&text=", 0],
+    // ["w", "drafts5://x-callback-url/runAction?action=WorkLog&text=", 0],
     //["WorkLog", "drafts5://x-callback-url/runAction?action=WorkLog&text=", 0],
+    ["jdi", "drafts5://x-callback-url/runAction?action=%24JustDoIt&x-success=drafts5://&text=", 0],
     
     //默认动作为复制。但由于 action 中设置了 trash，所以执行完会删除。
     ["☞", "drafts5://x-callback-url/runAction?action=Copy&text=", 0],
@@ -25,7 +26,7 @@ var action_list = [
     ["ai", "aisearch2://search?q=", 0],
     ["amz", "http://www.amazon.com/s/?field-keywords=", 1],
     ["app", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&term=", 0],
-    ["as", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&term=", 0],
+    // ["as", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&term=", 0],
     //["beorg", "beorg://x-callback-url/capture", 0],
     ["bing", "http://cn.bing.com/search?q=", 1],
     ["def", "launch://x-callback-url/define?x-success=drafts5://create&text=", 0],
@@ -50,8 +51,8 @@ var action_list = [
     ["pt", "pricetag://search?p=iOS&key=", 0],
     ["redeem", "https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/freeProductCodeWizard?mt=8&code="],
     ["say", "launch://x-callback-url/speak?x-success=drafts5://create&text=", 0],
-    // ["sms", "drafts5://create?action=Message&text=", 0],
-    ["sms", "sms://", 0],
+    ["sms", "drafts5://create?action=Message&text=", 0],
+    // ["sms", "sms://", 0],
     ["spot", "spotify:search:", 0],
     ["ssp", "https://www.google.com/search?q=site:sspai.com+", 0],
     ["tel", "tel://", 0],
@@ -62,11 +63,13 @@ var action_list = [
     // ["twuser", "tweetbot:///follow/", 0],
     ["uns", "https://unsplash.com/search/photos/", 0],
     ["url", "", 1],
+    ["weibo", "sinaweibo://sendweibo?show_keyboard=1&content=", 0],
     ["wiki", "https://zh.m.wikipedia.org/wiki/", 1],
     ["wolf", "wolframalpha:///?i=", 0],
-    ["wx", "http://weixin.sogou.com/weixinwap?query=", 1],
+    // 搜狗 - 微信公众号 失效。
+    // ["wx", "http://weixin.sogou.com/weixinwap?query=", 1],
     // 咸鱼网页已失效。
-    //["xy", "https://s.2.taobao.com/list/list.htm?search_type=item&q=", 1],
+    // ["xy", "https://s.2.taobao.com/list/list.htm?search_type=item&q=", 1],
     ["yt", "https://m.youtube.com/results?q=", 0],
     ["Youtube", "https://m.youtube.com/results?q=", 0],
     ["zhihu", "http://www.zhihu.com/search?q=", 1],
